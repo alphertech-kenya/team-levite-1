@@ -1,37 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Levite 1</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Team Levite 1 | Spirit Power Embassy</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #070707;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background:
+        radial-gradient(circle at top, #3a2a00, #070707 55%);
+}
+
+.logo {
+    width: 190px;
+    max-width: 70%;
+    margin-bottom: 25px;
+    filter: drop-shadow(0 0 20px rgba(255, 193, 7, 0.35));
+}
+
+h1 {
+    font-size: clamp(42px, 10vw, 80px);
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.gold {
+    color: #f5c542;
+}
+
+.tagline {
+    font-size: 20px;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+    margin: 6px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #080808;
+    background: #f5c542;
+}
+
+.btn.dark {
+    background: transparent;
+    color: white;
+    border: 1px solid #f5c542;
+}
+
+section {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 25px;
+    color: #f5c542;
+}
+
+.card {
+    background: #111;
+    border: 1px solid #292929;
+    border-radius: 18px;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.card p {
+    color: #ddd;
+    font-size: 17px;
+}
+
+.scripture {
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.location {
+    text-align: center;
+    color: #ddd;
+}
+
+.social {
+    text-align: center;
+}
+
+.social a {
+    display: inline-block;
+    margin: 8px;
+    padding: 12px 20px;
+    border: 1px solid #f5c542;
+    border-radius: 25px;
+    color: #f5c542;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 35px 20px;
+    background: #030303;
+    color: #999;
+    border-top: 1px solid #222;
+}
+
+.whatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #25D366;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 15px;
+    text-align: center;
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(10px);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #f5c542;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        margin: 0 5px;
+        font-size: 12px;
+    }
+
+    section {
+        padding: 65px 18px;
+    }
+
+    .card {
+        padding: 22px;
+    }
+}
+</style>
 </head>
 
 <body>
 
-    <h1>TEAM LEVITE 1</h1>
+<nav>
+    <a href="#about">ABOUT</a>
+    <a href="#vision">VISION</a>
+    <a href="#scripture">SCRIPTURE</a>
+    <a href="#contact">CONTACT</a>
+</nav>
 
-    <h2>A Generation Set Apart for God</h2>
+<header>
 
-    <p>
-        Welcome to Team Levite 1 — a youth team committed to
-        serving God, growing in faith, and impacting our generation.
-    </p>
+    <div>
+
+        <img
+            src="738ded57-6e7c-4f18-a05f-953906609e34.jpeg"
+            alt="Team Levite 1 Logo"
+            class="logo"
+        >
+
+        <h1>
+            TEAM <span class="gold">LEVITE 1</span>
+        </h1>
+
+        <p class="tagline">
+            A Generation Set Apart for God
+        </p>
+
+        <p>
+            A youth generation serving God,
+            growing in faith and carrying His presence.
+        </p>
+
+        <br>
+
+        <a class="btn" href="#about">Discover Team Levite 1</a>
+
+        <a class="btn dark"
+           href="https://wa.me/254729524123"
+           target="_blank">
+           WhatsApp Us
+        </a>
+
+    </div>
+
+</header>
+
+
+<section id="about">
+
+    <h2>Who We Are</h2>
+
+    <div class="card">
+
+        <p>
+            <strong>Team Levite 1</strong> is a youth team
+            under <strong>Spirit Power Embassy</strong>.
+        </p>
+
+        <br>
+
+        <p>
+            We are a generation committed to knowing God,
+            serving Him faithfully, walking in His presence
+            and impacting our generation for Christ.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section id="vision">
 
     <h2>Our Vision</h2>
 
-    <p>
-        To raise a generation that knows God, serves God,
-        and boldly carries His presence wherever they go.
-    </p>
+    <div class="card">
+
+        <p>
+            To raise a generation that knows God,
+            walks in His truth, serves with passion,
+            and boldly carries His presence wherever
+            they go.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>Our Mission</h2>
+
+    <div class="card">
+
+        <p>
+            To equip young people through prayer,
+            worship, the Word of God, fellowship and
+            service, creating a generation that lives
+            for God's purpose.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section id="scripture">
 
     <h2>Our Scripture</h2>
 
+    <div class="card scripture">
+
+        <p>
+            "But you are a chosen generation,
+            a royal priesthood, a holy nation,
+            His own special people, that you may
+            proclaim the praises of Him who called
+            you out of darkness into His marvelous light."
+        </p>
+
+        <br>
+
+        <strong class="gold">
+            1 Peter 2:9
+        </strong>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>Where We Are</h2>
+
+    <div class="card location">
+
+        <p>
+            <strong class="gold">
+                Spirit Power Embassy
+            </strong>
+        </p>
+
+        <p>
+            Sukunanga, Eldoret
+        </p>
+
+        <p>
+            Along Eldoret–Nakuru Highway
+        </p>
+
+    </div>
+
+</section>
+
+
+<section id="contact">
+
+    <h2>Connect With Us</h2>
+
+    <div class="card social">
+
+        <p>
+            Find Team Levite 1 on social media:
+        </p>
+
+        <br>
+
+        <a href="https://www.facebook.com/search/pages/?q=Team%20Levite%201"
+           target="_blank">
+           Facebook
+        </a>
+
+        <a href="https://www.instagram.com/explore/search/keyword/?q=Team%20Levite%201"
+           target="_blank">
+           Instagram
+        </a>
+
+        <a href="https://www.tiktok.com/search?q=Team%20Levite%201"
+           target="_blank">
+           TikTok
+        </a>
+
+        <br><br>
+
+        <p>
+            📞 0729 524 123
+        </p>
+
+    </div>
+
+</section>
+
+
+<footer>
+
     <p>
-        "But you are a chosen generation, a royal priesthood,
-        a holy nation, His own special people..."
+        © 2026 Team Levite 1
     </p>
 
-    <p><strong>1 Peter 2:9</strong></p>
+    <p>
+        Spirit Power Embassy
+    </p>
+
+    <br>
+
+    <p>
+        A Generation Set Apart for God 🦅
+    </p>
+
+</footer>
+
+
+<a
+    class="whatsapp"
+    href="https://wa.me/254729524123"
+    target="_blank"
+    aria-label="Chat with Team Levite 1 on WhatsApp">
+    ☎
+</a>
 
 </body>
 </html>
