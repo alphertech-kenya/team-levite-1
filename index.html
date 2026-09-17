@@ -1,416 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Team Levite 1 | Spirit Power Embassy</title>
+  <title>Team Levite 1 | Spirit Power Embassy</title>
 
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #070707;
-    color: white;
-    line-height: 1.6;
-}
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #070707;
+      color: white;
+      line-height: 1.6;
+    }
 
-header {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 40px 20px;
-    background:
-        radial-gradient(circle at top, #3a2a00, #070707 55%);
-}
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background:
+        radial-gradient(circle at top, #3a2a00 0%, #111 40%, #070707 75%);
+    }
 
-.logo {
-    width: 190px;
-    max-width: 70%;
-    margin-bottom: 25px;
-    filter: drop-shadow(0 0 20px rgba(255, 193, 7, 0.35));
-}
+    .logo {
+      width: 190px;
+      max-width: 70%;
+      margin-bottom: 25px;
+      filter: drop-shadow(0 0 20px rgba(255, 190, 40, 0.35));
+    }
 
-h1 {
-    font-size: clamp(42px, 10vw, 80px);
-    letter-spacing: 4px;
-    margin-bottom: 10px;
-}
+    .hero h1 {
+      font-size: 3rem;
+      letter-spacing: 3px;
+      margin-bottom: 10px;
+    }
 
-.gold {
-    color: #f5c542;
-}
+    .gold {
+      color: #f4c542;
+    }
 
-.tagline {
-    font-size: 20px;
-    color: #ddd;
-    margin-bottom: 30px;
-}
+    .hero h2 {
+      font-size: 1.25rem;
+      font-weight: normal;
+      margin-bottom: 25px;
+      color: #ddd;
+    }
 
-.btn {
-    display: inline-block;
-    padding: 14px 25px;
-    margin: 6px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #080808;
-    background: #f5c542;
-}
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #ccc;
+      font-size: 1.05rem;
+    }
 
-.btn.dark {
-    background: transparent;
-    color: white;
-    border: 1px solid #f5c542;
-}
-
-section {
-    padding: 80px 20px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-section h2 {
-    text-align: center;
-    font-size: 34px;
-    margin-bottom: 25px;
-    color: #f5c542;
-}
-
-.card {
-    background: #111;
-    border: 1px solid #292929;
-    border-radius: 18px;
-    padding: 30px;
-    margin: 20px 0;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-}
-
-.card p {
-    color: #ddd;
-    font-size: 17px;
-}
-
-.scripture {
-    text-align: center;
-    font-size: 22px;
-    font-style: italic;
-}
-
-.location {
-    text-align: center;
-    color: #ddd;
-}
-
-.social {
-    text-align: center;
-}
-
-.social a {
-    display: inline-block;
-    margin: 8px;
-    padding: 12px 20px;
-    border: 1px solid #f5c542;
-    border-radius: 25px;
-    color: #f5c542;
-    text-decoration: none;
-}
-
-footer {
-    text-align: center;
-    padding: 35px 20px;
-    background: #030303;
-    color: #999;
-    border-top: 1px solid #222;
-}
-
-.whatsapp {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    width: 58px;
-    height: 58px;
-    border-radius: 50%;
-    background: #25D366;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    font-size: 25px;
-    font-weight: bold;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
-}
-
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    padding: 15px;
-    text-align: center;
-    background: rgba(0,0,0,0.85);
-    backdrop-filter: blur(10px);
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 14px;
-}
-
-nav a:hover {
-    color: #f5c542;
-}
-
-@media (max-width: 600px) {
-    nav a {
-        margin: 0 5px;
-        font-size: 12px;
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 28px;
+      background: #f4c542;
+      color: #111;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
     }
 
     section {
-        padding: 65px 18px;
+      padding: 70px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 35px;
+      color: #f4c542;
     }
 
     .card {
-        padding: 22px;
+      background: #111;
+      border: 1px solid #292929;
+      border-radius: 18px;
+      padding: 30px;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
     }
-}
-</style>
+
+    .card p {
+      color: #ddd;
+      text-align: center;
+    }
+
+    .scripture {
+      text-align: center;
+      font-size: 1.15rem;
+      font-style: italic;
+      color: #eee;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .socials a {
+      text-decoration: none;
+      color: white;
+      background: #1b1b1b;
+      border: 1px solid #333;
+      padding: 13px 20px;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    .socials a:hover {
+      background: #f4c542;
+      color: #111;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .phone {
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 1.3rem;
+      color: #f4c542;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #030303;
+      border-top: 1px solid #222;
+      color: #999;
+    }
+
+    footer strong {
+      color: #f4c542;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero h2 {
+        font-size: 1.05rem;
+      }
+
+      section {
+        padding: 55px 18px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<nav>
-    <a href="#about">ABOUT</a>
-    <a href="#vision">VISION</a>
-    <a href="#scripture">SCRIPTURE</a>
-    <a href="#contact">CONTACT</a>
-</nav>
+  <!-- HERO SECTION -->
+  <header>
+    <div class="hero">
 
-<header>
+      <img
+        src="738ded57-6e7c-4f18-a05f-953906609e34.jpeg"
+        alt="Team Levite 1 Logo"
+        class="logo"
+      >
 
-    <div>
+      <h1>TEAM <span class="gold">LEVITE 1</span></h1>
 
-        <img
-            src="738ded57-6e7c-4f18-a05f-953906609e34.jpeg"
-            alt="Team Levite 1 Logo"
-            class="logo"
-        >
+      <h2>A Generation Set Apart for God</h2>
 
-        <h1>
-            TEAM <span class="gold">LEVITE 1</span>
-        </h1>
+      <p>
+        Welcome to Team Levite 1 — a youth team committed to
+        serving God, growing in faith, and impacting our generation
+        with the presence of God.
+      </p>
 
-        <p class="tagline">
-            A Generation Set Apart for God
-        </p>
-
-        <p>
-            A youth generation serving God,
-            growing in faith and carrying His presence.
-        </p>
-
-        <br>
-
-        <a class="btn" href="#about">Discover Team Levite 1</a>
-
-        <a class="btn dark"
-           href="https://wa.me/254729524123"
-           target="_blank">
-           WhatsApp Us
-        </a>
+      <a href="#about" class="button">Discover Our Mission</a>
 
     </div>
+  </header>
 
-</header>
 
-
-<section id="about">
+  <!-- ABOUT -->
+  <section id="about">
 
     <h2>Who We Are</h2>
 
     <div class="card">
-
-        <p>
-            <strong>Team Levite 1</strong> is a youth team
-            under <strong>Spirit Power Embassy</strong>.
-        </p>
-
-        <br>
-
-        <p>
-            We are a generation committed to knowing God,
-            serving Him faithfully, walking in His presence
-            and impacting our generation for Christ.
-        </p>
-
+      <p>
+        Team Levite 1 is a youth team under
+        <strong class="gold">Spirit Power Embassy</strong>,
+        dedicated to raising young people who know God,
+        love His Word, serve faithfully, and boldly carry
+        His presence wherever they go.
+      </p>
     </div>
 
-</section>
+  </section>
 
 
-<section id="vision">
+  <!-- VISION -->
+  <section>
 
     <h2>Our Vision</h2>
 
     <div class="card">
-
-        <p>
-            To raise a generation that knows God,
-            walks in His truth, serves with passion,
-            and boldly carries His presence wherever
-            they go.
-        </p>
-
+      <p>
+        To raise a generation that knows God, walks in His truth,
+        serves with passion, and boldly carries His presence
+        wherever they go.
+      </p>
     </div>
 
-</section>
+  </section>
 
 
-<section>
-
-    <h2>Our Mission</h2>
-
-    <div class="card">
-
-        <p>
-            To equip young people through prayer,
-            worship, the Word of God, fellowship and
-            service, creating a generation that lives
-            for God's purpose.
-        </p>
-
-    </div>
-
-</section>
-
-
-<section id="scripture">
+  <!-- SCRIPTURE -->
+  <section>
 
     <h2>Our Scripture</h2>
 
-    <div class="card scripture">
+    <div class="card">
 
-        <p>
-            "But you are a chosen generation,
-            a royal priesthood, a holy nation,
-            His own special people, that you may
-            proclaim the praises of Him who called
-            you out of darkness into His marvelous light."
-        </p>
+      <p class="scripture">
+        “But you are a chosen generation, a royal priesthood,
+        a holy nation, His own special people, that you may
+        proclaim the praises of Him who called you out of darkness
+        into His marvelous light.”
+      </p>
 
-        <br>
+      <br>
 
-        <strong class="gold">
-            1 Peter 2:9
-        </strong>
+      <p>
+        <strong class="gold">1 Peter 2:9</strong>
+      </p>
 
     </div>
 
-</section>
+  </section>
 
 
-<section>
+  <!-- LOCATION -->
+  <section>
 
     <h2>Where We Are</h2>
 
-    <div class="card location">
+    <div class="card">
 
-        <p>
-            <strong class="gold">
-                Spirit Power Embassy
-            </strong>
-        </p>
+      <p>
+        <strong class="gold">Spirit Power Embassy</strong>
+      </p>
 
-        <p>
-            Sukunanga, Eldoret
-        </p>
-
-        <p>
-            Along Eldoret–Nakuru Highway
-        </p>
+      <p>
+        Sukunanga, Eldoret<br>
+        Along Eldoret–Nakuru Highway
+      </p>
 
     </div>
 
-</section>
+  </section>
 
 
-<section id="contact">
+  <!-- CONNECT -->
+  <section>
 
     <h2>Connect With Us</h2>
 
-    <div class="card social">
+    <div class="card">
 
-        <p>
-            Find Team Levite 1 on social media:
-        </p>
+      <p>
+        Follow Team Levite 1 and stay connected with what
+        God is doing through the youth.
+      </p>
 
-        <br>
+      <div class="socials">
 
         <a href="https://www.facebook.com/search/pages/?q=Team%20Levite%201"
            target="_blank">
-           Facebook
+          Facebook
         </a>
 
-        <a href="https://www.instagram.com/explore/search/keyword/?q=Team%20Levite%201"
+        <a href="https://www.instagram.com/"
            target="_blank">
-           Instagram
+          Instagram
         </a>
 
         <a href="https://www.tiktok.com/search?q=Team%20Levite%201"
            target="_blank">
-           TikTok
+          TikTok
         </a>
 
-        <br><br>
-
-        <p>
-            📞 0729 524 123
-        </p>
+      </div>
 
     </div>
 
-</section>
+  </section>
 
 
-<footer>
+  <!-- CONTACT -->
+  <section>
+
+    <h2>Get In Touch</h2>
+
+    <div class="card contact">
+
+      <p>
+        For more information, prayer, fellowship,
+        or to connect with Team Levite 1:
+      </p>
+
+      <a class="phone" href="tel:0729524123">
+        📞 0729 524 123
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
 
     <p>
-        © 2026 Team Levite 1
+      © 2026 <strong>Team Levite 1</strong>
     </p>
 
     <p>
-        Spirit Power Embassy
+      Spirit Power Embassy • Eldoret, Kenya
     </p>
-
-    <br>
 
     <p>
-        A Generation Set Apart for God 🦅
+      A Generation Set Apart for God
     </p>
 
-</footer>
-
-
-<a
-    class="whatsapp"
-    href="https://wa.me/254729524123"
-    target="_blank"
-    aria-label="Chat with Team Levite 1 on WhatsApp">
-    ☎
-</a>
+  </footer>
 
 </body>
 </html>
